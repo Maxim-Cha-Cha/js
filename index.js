@@ -1,4 +1,5 @@
-const trafficColor = function (colorname) {
+//Задача №1.
+const traffiсColor = function (colorname) {
   const color1 = "Красный";
   const color2 = "Жёлтый";
   const color3 = "Зелёный";
@@ -13,61 +14,62 @@ const trafficColor = function (colorname) {
   }
 };
 
-const month = "user-month";
-switch (month) {
-  case "12":
-  case "1":
-  case "2": {
-    console.log("Зима");
-    break;
-  }
-  case "3":
-  case "4":
-  case "5": {
-    console.log("Весна");
-    break;
-  }
-  case "6":
-  case "7":
-  case "8": {
-    console.log("Лето");
-    break;
-  }
-  case "9":
-  case "10":
-  case "11": {
-    console.log("Осень");
-    break;
-  }
-  default: {
-    console.log("Введите число месяца");
-    break;
+//Задача№2
+const month = function (userMonth) {
+  switch (userMonth) {
+    case "12":
+    case "1":
+    case "2": {
+      console.log("Зима");
+      break;
+    }
+    case "3":
+    case "4":
+    case "5": {
+      console.log("Весна");
+      break;
+    }
+    case "6":
+    case "7":
+    case "8": {
+      console.log("Лето");
+      break;
+    }
+    case "9":
+    case "10":
+    case "11": {
+      console.log("Осень");
+      break;
+    }
+    default: {
+      console.log("Введите число месяца");
+      break;
+    }
   }
 };
 
-const x = +prompt('Введите x');
-const y = +prompt('Введите y');
-const operator = prompt('Введите оператор');
-function calculator(x, y, operator){
-const result;
-  switch(operator){
-    case'+':{
-     result = x + y;
-      break;
-    }
-    case'-':{
-      result = x - y;
-      break;
-    }
-    case'*':{
-      result = x * y;
-      break;
-    }
-    case'/':{
-      result = x / y;
-      break;
-    }
-  
+//Задача №3
+let x = +prompt("Введите x");
+let y = +prompt("Введите y");
+let operator = prompt("Введите оператор");
+switch (operator) {
+  case "+": {
+    alert(x + y);
+    break;
   }
-  return result
+  case "-": {
+    alert(x - y);
+    break;
+  }
+  case "*": {
+    alert(x * y);
+    break;
+  }
+  case "/": {
+    arert(x / y);
+    break;
+  }
+  default: {
+    arert("Что-то пошло не так");
+  }
 }
